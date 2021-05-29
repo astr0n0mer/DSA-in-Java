@@ -14,7 +14,7 @@ public class Main {
     }
 
     public void generateRandomArray() {
-        // generate random nos from 10 to 19
+        // generate random nos such that 0 <= randomNo < arraySize
         for (int i = 0; i < arraySize; i++) {
             myArray[i] = (int) (Math.random() * arraySize);
         }
@@ -66,7 +66,7 @@ public class Main {
         Main myArrayObj = new Main();
         myArrayObj.generateRandomArray();
 
-//        Generating a random search item: 0 <= searchItem < array.size
+//        Generating a random search item: 0 <= searchItem < arraySize
         int searchItem = (int) (Math.random() * myArrayObj.getArraySize());
 
 //        int searchResult = myArrayObj.getIndexOf(searchItem);// Linear Search
